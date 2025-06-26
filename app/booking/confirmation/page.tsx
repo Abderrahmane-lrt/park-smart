@@ -197,7 +197,7 @@ export default function ConfirmationPage() {
             <Share className="h-4 w-4 mr-2" />
             Share Booking
           </Button>
-          <Link href="/" className="flex-1">
+          <Link href="/home" className="flex-1">
             <Button className="w-full">Book Another Spot</Button>
           </Link>
         </div>
