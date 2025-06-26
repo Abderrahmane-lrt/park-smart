@@ -15,7 +15,7 @@ const ThemeProviderContext = createContext<ThemeProviderContextType | undefined>
 
 export function ThemeProvider({
   children,
-  defaultTheme = "system",
+  defaultTheme = "light",
   storageKey = "theme",
 }: {
   children: React.ReactNode
@@ -41,7 +41,7 @@ export function ThemeProvider({
     let systemTheme: "dark" | "light" = "light"
 
     if (theme === "system") {
-      systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
+      systemTheme = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"
     } else {
       systemTheme = theme
     }
