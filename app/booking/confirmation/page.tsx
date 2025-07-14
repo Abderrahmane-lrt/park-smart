@@ -208,10 +208,6 @@ export default function ConfirmationPage() {
             Need help? Contact our support team at{" "}
             <a href="mailto:support@parksmart.com" className="text-blue-600 hover:underline">
               support@parksmart.com
-            </a>{" "}
-            or call{" "}
-            <a href="tel:+1234567890" className="text-blue-600 hover:underline">
-              (123) 456-7890
             </a>
           </p>
         </div>

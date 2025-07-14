@@ -402,7 +402,7 @@ export default function ChatBot({ parkingSpots, onBookingRequest, onDirectionsRe
 
           <CardContent className="flex flex-col flex-1 min-h-0 p-0">
             {/* Messages */}
-            <ScrollArea className="flex-1 p-4 min-h-0 chatbot-messages">
+            <ScrollArea className="flex-1 p-4 min-h-0 chatbot-messages" style={{ maxHeight: 350, overflowY: "auto" }}>
               <div className="space-y-4">
                 {messages.map((message) => (
                   <div key={message.id} className={`flex ${message.type === "user" ? "justify-end" : "justify-start"}`}>

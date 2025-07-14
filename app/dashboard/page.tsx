@@ -101,7 +101,7 @@ export default function DashboardPage() {
   const handleLogout = () => {
     localStorage.removeItem("user")
     localStorage.removeItem("currentBooking")
-    router.push("/")
+    router.push("/home")
   }
 
   const getStatusColor = (status: string) => {
